@@ -1,6 +1,9 @@
 
 tasks:
-  - init: mvn dependency:resolve install -DskipTests=false
+  - init: |
+      git config --global alias.st status
+      git config --global alias.ci commit
+      mvn dependency:resolve install -DskipTests=false
 
 vscode:
   extensions:
