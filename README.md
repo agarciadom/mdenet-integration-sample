@@ -4,4 +4,4 @@ Sample project using Epsilon scripts from a Java program, for an [MDENet](https:
 
 This project can be opened directly from [Gitpod](https://gitpod.io/):
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/.../...)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/bluezio/mdenet-integration-sample)
