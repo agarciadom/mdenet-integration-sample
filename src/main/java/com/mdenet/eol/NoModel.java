@@ -1,9 +1,7 @@
 package com.mdenet.eol;
 
-import org.eclipse.epsilon.eol.EolEngine;
 import org.eclipse.epsilon.eol.EolModule;
 import org.eclipse.epsilon.eol.exceptions.EolRuntimeException;
-import org.eclipse.epsilon.eol.parse.EolParser;
 
 public class NoModel {
 
