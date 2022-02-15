@@ -1,7 +1,5 @@
 package com.mdenet.eol;
 
-import java.util.Map;
-
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.emfatic.core.EmfaticResourceFactory;
 import org.eclipse.epsilon.emc.emf.EmfModel;

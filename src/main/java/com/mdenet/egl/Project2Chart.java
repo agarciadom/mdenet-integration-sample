@@ -3,8 +3,6 @@ package com.mdenet.egl;
 import java.io.File;
 import java.nio.file.Files;
 import java.util.Collections;
-import java.util.Map;
-
 import com.google.common.base.Charsets;
 
 import org.eclipse.emf.ecore.resource.Resource;
