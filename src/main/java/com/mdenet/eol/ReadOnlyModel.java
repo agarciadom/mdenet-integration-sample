@@ -11,7 +11,7 @@ import org.eclipse.epsilon.flexmi.FlexmiResourceFactory;
 public class ReadOnlyModel {
     public static void main(String[] args) throws Exception {
         // 1. Enable Flexmi and Emfatic support (for this example)
-        final Map<String, Object> emap = Resource.Factory.Registry.INSTANCE.getExtensionToFactoryMap();
+        final var emap = Resource.Factory.Registry.INSTANCE.getExtensionToFactoryMap();
         emap.put("flexmi", new FlexmiResourceFactory());
         emap.put("emf", new EmfaticResourceFactory());
 
