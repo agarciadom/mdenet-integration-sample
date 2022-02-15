@@ -1,6 +1,6 @@
 
 tasks:
-  - init: mvn dependency:resolve -DskipTests=false
+  - init: mvn dependency:resolve install -DskipTests=false
 
 vscode:
   extensions:
