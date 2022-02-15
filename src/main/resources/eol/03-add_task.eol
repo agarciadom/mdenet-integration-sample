@@ -1,0 +1,7 @@
+var t = new Task;
+
+t.title = 'Example';
+t.start = 10;
+t.duration = duration.isDefined() ? duration : 10;
+
+Project.all.first.tasks.add(t);
