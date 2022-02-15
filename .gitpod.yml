@@ -4,6 +4,8 @@ tasks:
       git config --global alias.st status
       git config --global alias.ci commit
       mvn dependency:resolve install -DskipTests=false
+  - name: Web server (for EGL)
+    init: python -m http.server 8080
 
 vscode:
   extensions:
@@ -12,3 +14,7 @@ vscode:
     - vscjava.vscode-java-dependency
     - vscjava.vscode-java-test
     - vscjava.vscode-maven
+
+ports:
+  - port: 8080
+    onOpen: ignore
