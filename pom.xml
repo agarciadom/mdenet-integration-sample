@@ -51,6 +51,11 @@
         <!-- 02. Flexmi + Emfatic (for the Playground EOL example) -->
         <dependency>
             <groupId>org.eclipse.epsilon</groupId>
+            <artifactId>org.eclipse.epsilon.emc.emf</artifactId>
+            <version>${epsilon.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.epsilon</groupId>
             <artifactId>org.eclipse.epsilon.flexmi</artifactId>
             <version>${epsilon.version}</version>
         </dependency>
@@ -60,21 +65,14 @@
             <version>1.0.0</version>
         </dependency>
 
-        <!-- 03. EMF model support for the last part of EOL-->
-        <dependency>
-            <groupId>org.eclipse.epsilon</groupId>
-            <artifactId>org.eclipse.epsilon.emc.emf</artifactId>
-            <version>${epsilon.version}</version>
-        </dependency>
-
-        <!-- 04. ETL support-->
+        <!-- 03. ETL support-->
         <dependency>
             <groupId>org.eclipse.epsilon</groupId>
             <artifactId>org.eclipse.epsilon.etl.engine</artifactId>
             <version>${epsilon.version}</version>
         </dependency>
 
-        <!-- 05. EGL support-->
+        <!-- 04. EGL support-->
         <dependency>
             <groupId>org.eclipse.epsilon</groupId>
             <artifactId>org.eclipse.epsilon.egl.engine</artifactId>
