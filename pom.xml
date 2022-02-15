@@ -13,7 +13,33 @@
     <maven.compiler.target>11</maven.compiler.target>
   </properties>
   
+  <repositories>
+	  <repository>
+	      <id>Sonatype</id>
+	      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+	  </repository>
+  </repositories>
+
   <dependencies>
+    <!-- 01. EOL dependency-->
+  	<dependency>
+  		<groupId>org.eclipse.epsilon</groupId>
+  		<artifactId>org.eclipse.epsilon.eol.engine</artifactId>
+  		<version>${epsilon.version}</version>
+  	</dependency>
+
+    <!-- 02. Flexmi + Emfatic (for the Playground EOL example) -->
+    <dependency>
+	    <groupId>org.eclipse.epsilon</groupId>
+	    <artifactId>org.eclipse.epsilon.flexmi</artifactId>
+	    <version>${epsilon.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.eclipse.emfatic</groupId>
+      <artifactId>org.eclipse.emfatic.core</artifactId>
+      <version>1.0.0</version>
+    </dependency>
+
   	<dependency>
   		<groupId>org.eclipse.epsilon</groupId>
   		<artifactId>org.eclipse.epsilon.emc.emf</artifactId>
@@ -27,11 +53,6 @@
   	<dependency>
   		<groupId>org.eclipse.epsilon</groupId>
   		<artifactId>org.eclipse.epsilon.etl.engine</artifactId>
-  		<version>${epsilon.version}</version>
-  	</dependency>
-  	<dependency>
-  		<groupId>org.eclipse.epsilon</groupId>
-  		<artifactId>org.eclipse.epsilon.eol.engine</artifactId>
   		<version>${epsilon.version}</version>
   	</dependency>
   </dependencies>
