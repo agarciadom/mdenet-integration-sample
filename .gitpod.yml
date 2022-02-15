@@ -1,9 +1,11 @@
 
 tasks:
-  - init: |
-      git config --global alias.st status
-      git config --global alias.ci commit
-      mvn dependency:resolve install -DskipTests=false
+  - init: mvn dependency:resolve install -DskipTests=false
+
+gitConfig:
+  alias.st: status
+  alias.ci: commit
+  alias.lg: log --graph
 
 vscode:
   extensions:
