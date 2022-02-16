@@ -31,10 +31,15 @@ public class Project2Chart {
         model.load();
         egl.getContext().getModelRepository().addModel(model);
 
-        // 4. Run the template
-        String html = (String) egl.execute();
-        Files.write(new File("output.html").toPath(),
-            Collections.singleton(html),
-            Charsets.UTF_8);
+        try {
+            // 4. Run the template
+            String html = (String) egl.execute();
+            Files.write(new File("output.html").toPath(),
+                Collections.singleton(html),
+                Charsets.UTF_8);
+        } finally {
+            // 5. Dispose of the models
+            egl.getContext().getModelRepository().dispose();
+        }
     }
 }
