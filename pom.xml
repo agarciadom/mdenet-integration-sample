@@ -26,16 +26,16 @@
 
     <dependencyManagement>
         <dependencies>
-            <!-- Need to ensure that we use consistent signers in the Eclipse core JARs -->
+            <!-- Unify EMF versions across EMC EMF driver and Emfatic-->
             <dependency>
-                <groupId>org.eclipse.platform</groupId>
-                <artifactId>org.eclipse.core.runtime</artifactId>
-                <version>3.24.0</version>
+                <groupId>org.eclipse.emf</groupId>
+                <artifactId>org.eclipse.emf.ecore</artifactId>
+                <version>2.23.0</version>
             </dependency>
             <dependency>
-                <groupId>org.eclipse.platform</groupId>
-                <artifactId>org.eclipse.core.resources</artifactId>
-                <version>3.16.0</version>
+                <groupId>org.eclipse.emf</groupId>
+                <artifactId>org.eclipse.emf.common</artifactId>
+                <version>2.23.0</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -53,6 +53,12 @@
             <groupId>org.eclipse.epsilon</groupId>
             <artifactId>org.eclipse.epsilon.emc.emf</artifactId>
             <version>${epsilon.version}</version>
+            <exclusions>
+              <exclusion>
+                <groupId>org.eclipse.emf</groupId>
+                <artifactId>org.eclipse.xsd</artifactId>
+              </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>org.eclipse.epsilon</groupId>
@@ -63,6 +69,12 @@
             <groupId>org.eclipse.emfatic</groupId>
             <artifactId>org.eclipse.emfatic.core</artifactId>
             <version>1.0.0</version>
+            <exclusions>
+              <exclusion>
+                <groupId>org.eclipse.platform</groupId>
+                <artifactId>org.eclipse.core.runtime</artifactId>
+              </exclusion>
+            </exclusions>
         </dependency>
 
         <!-- 03. ETL support-->
