@@ -16,7 +16,5 @@ vscode:
   extensions:
     - redhat.java
     - vscjava.vscode-java-debug
-    - vscjava.vscode-java-dependency
-    - vscjava.vscode-maven
     - ms-vscode.live-server
     - epsilon.language-epsilon
