@@ -1,6 +1,7 @@
 
 tasks:
   - init: mvn dependency:resolve install -DskipTests=false
+  - command: "echo '⏱ If this is a fresh workspace, please wait 5-10s before opening a .java file: the language server needs to warm up!'"
 
 gitConfig:
   alias.st: status
@@ -12,7 +13,6 @@ vscode:
     - redhat.java
     - vscjava.vscode-java-debug
     - vscjava.vscode-java-dependency
-    - vscjava.vscode-java-test
     - vscjava.vscode-maven
     - ms-vscode.live-server
     - epsilon.language-epsilon
