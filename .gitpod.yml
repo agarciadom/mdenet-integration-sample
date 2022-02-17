@@ -2,8 +2,8 @@
 tasks:
   - init: mvn dependency:resolve install -DskipTests=false
   - command: |
-      echo -e "\n\n⏱    $(tput bold)If this is a fresh workspace, please wait 5-10s before opening a .java file: the language server needs to warm up!"
-      echo -e "⏱    $(tput bold)After this wait, if you do not see 'Run|Debug' next to the main() methods, reload the page.\n"
+      echo -e "\n\n⏱    $(tput bold)If this is a fresh workspace, please wait 5-10s before opening a .java file: the language server needs to warm up!"$(tput sgr0)
+      echo -e "⏱    $(tput bold)After this wait, if you do not see 'Run|Debug' next to the main() methods, reload the page.$(tput sgr0)\n"
 
 gitConfig:
   alias.st: status
