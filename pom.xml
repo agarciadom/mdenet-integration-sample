@@ -18,6 +18,7 @@
     </properties>
 
     <repositories>
+        <!-- For the Epsilon -SNAPSHOT versions -->
         <repository>
             <id>Sonatype</id>
             <url>https://oss.sonatype.org/content/repositories/snapshots</url>
