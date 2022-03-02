@@ -55,6 +55,7 @@
             <artifactId>org.eclipse.epsilon.emc.emf</artifactId>
             <version>${epsilon.version}</version>
             <exclusions>
+              <!-- We do not need EMF's XML Schema support-->
               <exclusion>
                 <groupId>org.eclipse.emf</groupId>
                 <artifactId>org.eclipse.xsd</artifactId>
