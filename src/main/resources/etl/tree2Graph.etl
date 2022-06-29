@@ -27,7 +27,7 @@ rule Tree2NodeAndEdge
 
 	// Get hold of the one graph
 	// created in the previous rule
-	var graph = Target!Graph.all.first();
+	var graph = Target!Graph.all.first;
 	graph.nodes.add(n);
 
 	// If the depth of the tree is > 1

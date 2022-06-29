@@ -10,7 +10,7 @@
 				var data = google.visualization.arrayToDataTable([
 					['Task', 'Months'],
 					[*Generate one slice for every task*]
-					[%for (t in Task.all){%]
+					[%for (t in Task.all){ %]
 					['[%= t.title %]', [%= t.duration %]],
 					[%}%]
 				]);
