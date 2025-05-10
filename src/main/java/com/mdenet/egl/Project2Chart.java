@@ -7,7 +7,7 @@ import com.google.common.base.Charsets;
 
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.emfatic.core.EmfaticResourceFactory;
-import org.eclipse.epsilon.egl.EglTemplateFactoryModuleAdapter;
+import org.eclipse.epsilon.egl.EglModule;
 import org.eclipse.epsilon.emc.emf.EmfModel;
 import org.eclipse.epsilon.flexmi.FlexmiResourceFactory;
 
@@ -19,7 +19,7 @@ public class Project2Chart {
         emap.put("emf", new EmfaticResourceFactory());
 
         // 2. Parse the EGL sources
-        EglTemplateFactoryModuleAdapter egl = new EglTemplateFactoryModuleAdapter();
+        EglModule egl = new EglModule();
         egl.parse(Project2Chart.class.getResource("/egl/project2chart.egl"));
 
         // 3. Add model
