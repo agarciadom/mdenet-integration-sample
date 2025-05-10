@@ -10,9 +10,10 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>11</maven.compiler.source>
-        <maven.compiler.target>11</maven.compiler.target>
-        <epsilon.version>2.4.0</epsilon.version>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <epsilon.version>2.8.0</epsilon.version>
+        <emfatic.version>1.1.0</emfatic.version>
     </properties>
 
     <dependencyManagement>
@@ -60,7 +61,7 @@
         <dependency>
             <groupId>org.eclipse.emfatic</groupId>
             <artifactId>org.eclipse.emfatic.core</artifactId>
-            <version>1.0.0</version>
+            <version>${emfatic.version}</version>
             <exclusions>
               <exclusion>
                 <groupId>org.eclipse.platform</groupId>

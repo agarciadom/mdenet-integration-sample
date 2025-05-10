@@ -18,6 +18,7 @@ vscode:
     - vscjava.vscode-java-debug
     - vscjava.vscode-maven
     - ms-vscode.live-server
+    - ms-azuretools.vscode-docker
     - epsilon.language-epsilon
 
 ports:
@@ -27,3 +28,6 @@ ports:
   - port: 3000
     visibility: private
     onOpen: ignore
+
+image:
+    file: .gitpod.Dockerfile
