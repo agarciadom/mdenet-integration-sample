@@ -14,9 +14,7 @@ gitConfig:
 
 vscode:
   extensions:
-    - redhat.java
-    - vscjava.vscode-java-debug
-    - vscjava.vscode-maven
+    - vscjava.vscode-java-pack
     - ms-vscode.live-server
     - ms-azuretools.vscode-docker
     - epsilon.language-epsilon
